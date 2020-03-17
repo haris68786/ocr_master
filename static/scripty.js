@@ -107,7 +107,7 @@ $(function() {
      {
          console.log(data.text);
          var text = data.text.split('\n').join('<br/>');
-         $("body").append('<div class="container">\n' +
+         $(".image-text").html('<div class="container">\n' +
              '      <div class="row">\n' +
              '          <div class="col-sm-2"></div>\n' +
              '          <div class="col-sm-8">\n' +
@@ -124,6 +124,7 @@ $(function() {
      },
      error: function(err)
      {
+         alert("error");
          alert(err);
      }
  });

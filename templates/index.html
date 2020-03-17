@@ -32,7 +32,7 @@
         <a class="nav-link" href="#" id="show_api">API <span class="sr-only" >(current)</span></a>
       </li>
         <li class="nav-item active">
-        <a class="nav-link" href="#">Source code <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">OCR page <span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
@@ -48,10 +48,10 @@
          enctype = "multipart/form-data">
           <div class="form-group">
               <strong>Preprocess :</strong>
-           <label>Thresh</label>
-        <input type="radio" name="preprocess" value="thresh">
-        <label>Blur</label>
-        <input type="radio" name="preprocess" value="blur"><br>
+           <label>Small text in big image</label>
+        <input type="radio" name="preprocess" value="small_text">
+        <label>Vertical Text</label>
+        <input type="radio" name="preprocess" value="vertical_text"><br>
 
          <div class="input-group image-preview">
                 <input type="text" class="form-control image-preview-filename" disabled="disabled"> <!-- don't give a name === doesn't send on POST/GET -->
@@ -70,6 +70,9 @@
             </div><!-- /input-group image-preview [TO HERE]-->
         <br>
          <input type = "submit" class="btn btn-primary"/>
+          </div>
+          <div class="image-text">
+
           </div>
       </form>
 
